@@ -1,0 +1,30 @@
+# ---- large artifacts (never commit) ----
+data/
+ckpts/
+models/
+*.arrow
+*.safetensors
+*.bin
+
+# ---- logs / flags / caches ----
+*.log
+*.flag
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# ---- trial / smoke / debug scripts (kept local, not part of the clean pipeline) ----
+train/run_lora_*.sh
+train/run_9b_cap.sh
+train/run_9b_lora.sh
+train/run_qlora.sh
+catgen/run_*.sh
+run_v5_*.sh
+
+# ---- backups / scratch / server-specific ----
+_pre_v2_backup_*/
+reports_newsig/
+logs/
+handoff/
+scratch/
+*.tmp
